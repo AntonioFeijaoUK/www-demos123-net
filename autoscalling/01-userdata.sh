@@ -1,19 +1,22 @@
 #!/bin/bash
 
+# Install Apache Web Server and PHP and utils
+yum remove -y httpd php
+yum install -y httpd24 php56 wget gzip 
+
 # update OS
 yum update -y
 
-# Install Apache Web Server and PHP
-yum remove -y httpd php
-yum install -y httpd24 php56
-
-
 # Download Lab files
 cd /tmp
-wget http://demos123.net/tier1-demo/tier1-demo.tar
-untar -zxvf tier1-demo.tar -d /tmp/
-mv /tmp/tier1-demo/* /var/www/html/
 
+wget http://demos123.net/autoscalling/autoscalling-www.zip
+
+unzip autoscalling-www.zip
+
+mv autoscalling-www/* /var/www/html
+
+echo " $(date) version 3" > /var/www/html/version.txt
 
 # Turn on web server
 chkconfig httpd on
