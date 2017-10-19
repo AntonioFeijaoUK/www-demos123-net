@@ -1,29 +1,35 @@
 # Demos123.net
 
+---
+
 ## About
-> About [Demos123.net](http://demos123.net) - This website is for **my own private practice and learning**
-> in multiple products and Services.
->
-> Feel free to take some ideas and learnings <-- at your own risk!
->
-> Remember: "Practice makes it perfect!"
->
-> I am going to use mostly [AWS Products and Services](https://aws.amazon.com) and I will link in this page some demos for my
-> own reference and practice.
->
-> Sharing this demos publicly hope it will bright awareness of the "power of the cloud" and how it can be impressive,
-> and remember, speed of innovations is a key term for success (or failure),
-> so start using the cloud now!
->
-> Disclaimer, use the cloud at your own risk ;)
->
-> All the best,
-> [FeijaoUK](https://feijaouk.com)
+
+> About [Demos123.net](http://demos123.net)
+This website is for **my own private practice and learning** in multiple products and Services.
+
+Feel free to take some ideas and learnings <-- at your own risk!
+
+Remember: **"practice makes perfect"**
+> *"regular exercise of an activity or skill is the way to become proficient in it"*
+
+I am going to use mostly [AWS Products and Services](https://aws.amazon.com) and I will link in this page some demos for my
+own reference and practice.
+
+Sharing this demos publicly hope it will bright awareness of the "power of the cloud" and how it can be impressive,
+and remember, speed of innovations is a key term for success (or failure), so start using the cloud now!
+
+**Disclaimer, use the cloud at your own risk ;)**
+
+All the best,
+[FeijaoUK](https://feijaouk.com)
 
 
 ---
+
 ## Demos 1
+
 //TODO -- needs update
+
 [ ] Move file into the S3 bucksc
 [ ] change A and DNS records
 
@@ -41,7 +47,16 @@ Click here for "how to create the AWS S3 Bucket for Static Website Hosting"
 
 
 ---
-## Demos 2 - VPC-31
+
+## Demos 2 - VPC-31-DEMO
+
+### Link
+
+* [http://vpc-31-demo.demos123.net](http://vpc-31-demo.demos123.net)
+* [http://loadbalancer31-94164108.eu-west-2.elb.amazonaws.com/](http://loadbalancer31-94164108.eu-west-2.elb.amazonaws.com/)
+ - first link is a CNAME of second link (the ELB)
+ - Note, is possible to use more than one ELB, and then routing to the multiple ELBs is done on *Route53*
+
 ### Virtual Private Computer (VPC), Elastic Load Balancer (ELB), Auto-Scalling (ASG)
 
 * Auto-Scalling
@@ -58,7 +73,7 @@ Click here for "how to create the AWS S3 Bucket for Static Website Hosting"
   - running basic script on load (**user-data init script**) to download and execute a script from Github,
   (one day will learn to do it from AWS Codedeploy)
   - Script will install a Apache (or ngix) (**httpd**) and loads a basic webpage with **metadata** from the EC2
-    + metadate like: machine-id, zone...
+  - metadata like: machine-id, zone...
     
 * EC2 network
   - multi-AZs 
@@ -77,15 +92,19 @@ IPs sub-net
 
 ```
 
-* [http://loadbalancer31-94164108.eu-west-2.elb.amazonaws.com/](http://loadbalancer31-94164108.eu-west-2.elb.amazonaws.com/)
-* [http://vpc-31-demo.demos123.net](http://vpc-31-demo.demos123.net)
 
 
-
-
-
+---
 
 ## other notes
+
 * Chrome links and notes
   - [chrome://net-internals/#dns](chrome://net-internals/#dns)    // usefull do delete chrome's dns cache
   - [chrome://chrome-urls/](chrome://chrome-urls/)
+
+
+---
+
+## footer
+
+* [FeijaoUK](https://feijaouk.com)
