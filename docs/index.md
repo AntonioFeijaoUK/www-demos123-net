@@ -1,7 +1,7 @@
 # Demos123.net
 
 ## About
-> About [Demos123.net](http://demos123.net) - This website is for *my own private practice and learning**
+> About [Demos123.net](http://demos123.net) - This website is for **my own private practice and learning**
 > in multiple products and Services.
 >
 > Feel free to take some ideas and learnings <-- at your own risk!
@@ -76,8 +76,9 @@ IPs sub-net
   subnet31b-2-private - 192.168.31.48 - 192.168.31.63
 
 ```
-* http://loadbalancer31-94164108.eu-west-2.elb.amazonaws.com/
-* http://vpc-31-demo.demos123.net
+
+* [http://loadbalancer31-94164108.eu-west-2.elb.amazonaws.com/](http://loadbalancer31-94164108.eu-west-2.elb.amazonaws.com/)
+* [http://vpc-31-demo.demos123.net](http://vpc-31-demo.demos123.net)
 
 
 
@@ -86,5 +87,5 @@ IPs sub-net
 
 ## other notes
 * Chrome links and notes
-  - chrome://net-internals/#dns    // usefull do delete chrome's dns cache
-  - chrome://chrome-urls/    
+  - [chrome://net-internals/#dns](chrome://net-internals/#dns)    // usefull do delete chrome's dns cache
+  - [chrome://chrome-urls/](chrome://chrome-urls/)
