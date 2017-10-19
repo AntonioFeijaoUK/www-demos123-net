@@ -2,22 +2,21 @@
 
 ---
 
-## About
+## About [Demos123.net](http://demos123.net)
 
-> About [Demos123.net](http://demos123.net)
-
-* This website is for **my own private practice and learning** in multiple products and Services.
+This website is for **my own private practice and learning** in multiple products and Services.
 
 Feel free to take some ideas and learnings <-- at your own risk!
 
 Remember: **"practice makes perfect"**
+
 > *"regular exercise of an activity or skill is the way to become proficient in it"*
 
 I am going to use mostly [AWS Products and Services](https://aws.amazon.com) and I will link in this page some demos for my
 own reference and practice.
 
-Sharing this demos publicly hope it will bright awareness of the "power of the cloud" and how it can be impressive,
-and remember, speed of innovations is a key term for success (or failure), so start using the cloud now!
+I hope this website will bright even more awareness of the "power of the cloud" and how impressive it can be!
+Remember, speed of innovations is a key term for success (or failure), so start using the cloud now!
 
 **Disclaimer, use the cloud at your own risk ;)**
 
