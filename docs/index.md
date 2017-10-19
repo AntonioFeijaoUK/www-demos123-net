@@ -5,7 +5,8 @@
 ## About
 
 > About [Demos123.net](http://demos123.net)
-This website is for **my own private practice and learning** in multiple products and Services.
+
+* This website is for **my own private practice and learning** in multiple products and Services.
 
 Feel free to take some ideas and learnings <-- at your own risk!
 
@@ -30,8 +31,9 @@ All the best,
 
 //TODO -- needs update
 
-[ ] Move file into the S3 bucksc
-[ ] change A and DNS records
+* [ ] Move file into the S3 bucksc
+* [ ] change A and DNS records
+
 
 ```shell
 
