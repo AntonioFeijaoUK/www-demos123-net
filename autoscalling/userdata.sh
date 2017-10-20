@@ -1,23 +1,29 @@
 #!/bin/bash
 
-# Install Apache Web Server and PHP and utils
-yum remove -y httpd php
-yum install -y httpd24 php56 wget gzip 
-
-# update OS
-yum update -y
-
-# Download Lab files
+# Selecting working directory
 cd /tmp
 
-wget http://demos123.net/autoscalling/autoscalling-www.zip
+## initialising log file
+### output redirect - https://stackoverflow.com/questions/876239/how-can-i-redirect-and-append-both-stdout-and-stderr-to-a-file-with-bash
+echo $(date) > logs-install.logs 2>&1
 
-unzip autoscalling-www.zip
+# Remove any version of apache and php
+yum remove -y httpd* php* >> logs-install.logs 2>&1
 
-mv autoscalling-www/* /var/www/html
+# updating OS
+yum update -y >> logs-install.logs 2>&1
 
-echo " $(date) version 3" > /var/www/html/version.txt
 
-# Turn on web server
-chkconfig httpd on
-service httpd start
+# Intalling specific version of apache and php
+yum install -y httpd24 php56 >> logs-install.logs 2>&1
+
+
+# Download Lab files
+wget https://raw.githubusercontent.com/feijaouk/demos123.net/master/autoscalling/index.php -O /var/html/www/index.php >> logs-install.logs 2>&1
+
+echo -e "This machine was built on $(date)
+script version control 2017-10-20-1709" > /var/www/html/version.txt
+
+# Turn website on on start and start web server now
+chkconfig httpd on >> logs-install.logs 2>&1
+service httpd start >> logs-install.logs 2>&1
