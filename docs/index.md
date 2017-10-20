@@ -5,11 +5,8 @@
 ## About [Demos123.net](http://demos123.net)
 
 * This website is for **my own private practice and learning** in multiple products and Services.
-
 * Feel free to take some ideas and learnings <-- **at your own risk!**
-
 * And remember: **"practice makes perfect"**
-
 > *"regular exercise of an activity or skill is the way to become proficient in it"*
 
 * I am going to use mostly [AWS Products and Services](https://aws.amazon.com) and I will link in this page some demos for my own reference and practice.
@@ -18,16 +15,15 @@
 
 * **Disclaimer, use the cloud at your own risk ;)**
 
+
 All the best,
 [FeijaoUK](https://feijaouk.com)
 
-
 ---
 
-## Demos 1
+## DEMO-1 - Static website on S3 bucket
 
-//TODO -- needs update
-
+* //TODO -- needs update
 * [ ] Move file into the S3 bucksc
 * [ ] change A and DNS records
 
@@ -47,14 +43,15 @@ Click here for "how to create the AWS S3 Bucket for Static Website Hosting"
 
 ---
 
-## Demos 2 - VPC-31-DEMO
+## Demos-2 - VPC-31-AutoScalling ( #ELB #ASG #EC2 )
 
 ### Link
 
-* [http://vpc-31-demo.demos123.net](http://vpc-31-demo.demos123.net)
+* [http://vpc-31-autoscalling.demos123.net](http://vpc-31-autoscalling.demos123.net)
+
 * [http://loadbalancer31-94164108.eu-west-2.elb.amazonaws.com/](http://loadbalancer31-94164108.eu-west-2.elb.amazonaws.com/)
- - first link is a CNAME of second link (the ELB)
- - Note, is possible to use more than one ELB, and then routing to the multiple ELBs is done on *Route53*
+  - first link is a CNAME of second link (the ELB)
+  - Note, is possible to use more than one ELB, and then routing to the multiple ELBs is done on *Route53*
 
 ### Virtual Private Computer (VPC), Elastic Load Balancer (ELB), Auto-Scalling (ASG)
 
