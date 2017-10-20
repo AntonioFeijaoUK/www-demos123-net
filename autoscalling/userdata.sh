@@ -19,7 +19,7 @@ yum install -y httpd24 php56 >> logs-install.logs 2>&1
 
 
 # Download Lab files
-wget https://raw.githubusercontent.com/feijaouk/demos123.net/master/autoscalling/index.php -O /var/html/www/index.php >> logs-install.logs 2>&1
+wget https://raw.githubusercontent.com/feijaouk/demos123.net/master/autoscalling/index.php -O /var/html/www/index.php
 
 echo -e "This machine was built on $(date)
 script version control 2017-10-20-1709" > /var/www/html/version.txt
