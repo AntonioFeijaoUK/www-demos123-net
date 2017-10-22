@@ -1,5 +1,6 @@
 # Demos123.net
 
+[[VPC-31-AutoScalling](#VPC-31-AutoScalling)
 ---
 
 ## About [Demos123.net](http://demos123.net)
