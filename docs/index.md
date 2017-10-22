@@ -1,7 +1,5 @@
 # Demos123.net
 
-* [VPC-31-AutoScalling](#vpc-31-autoscalling)
-
 ---
 
 ## About [Demos123.net](http://demos123.net)
@@ -23,13 +21,13 @@ All the best,
 
 ---
 
-## [Static website on S3 bucket]
-### AWS Services: S3
+## [Static website on S3 bucket](https://github.com/feijaouk/demos123.net/blob/master/docs/s3-static-website.md)
+### AWS Services -  S3
 
 ---
 
 ## [VPC-31-AutoScalling](https://github.com/feijaouk/demos123.net/blob/master/docs/vpc-31-autoscalling.md)
-### Services ( #ELB #ASG #EC2 )
+### AWS Services - ELB, ASG, EC2
 
 
 ---
@@ -39,7 +37,6 @@ All the best,
 * Chrome links and notes
   - [chrome://net-internals/#dns](chrome://net-internals/#dns)    // usefull do delete chrome's dns cache
   - [chrome://chrome-urls/](chrome://chrome-urls/)
-
 
 ---
 
