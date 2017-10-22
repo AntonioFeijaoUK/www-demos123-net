@@ -5,7 +5,7 @@
 
 * [http://vpc-31-autoscalling.demos123.net](http://vpc-31-autoscalling.demos123.net)
 
-* [http://loadbalancer31-94164108.eu-west-2.elb.amazonaws.com/](http://loadbalancer31-94164108.eu-west-2.elb.amazonaws.com/)
+* [http://vpc-31-elb-753059963.eu-west-2.elb.amazonaws.com/](http://vpc-31-elb-753059963.eu-west-2.elb.amazonaws.com/)
   - first link is a CNAME of second link (the ELB)
   - Note, is possible to use more than one ELB, and then routing to the multiple ELBs is done on *Route53*
 
