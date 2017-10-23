@@ -32,11 +32,7 @@ All the best,
 
 ---
 
-## other notes
-
-* Chrome links and notes
-  - [chrome://net-internals/#dns](chrome://net-internals/#dns)    // usefull do delete chrome's dns cache
-  - [chrome://chrome-urls/](chrome://chrome-urls/)
+## [some bookmarks](https://github.com/feijaouk/demos123.net/blob/master/docs/some-bookmarks.md)
 
 ---
 
