@@ -21,21 +21,18 @@ All the best,
 
 ---
 
-## [Static website on S3 bucket](https://github.com/feijaouk/demos123.net/blob/master/docs/s3-static-website.md)
-### AWS Services -  S3
+## Demos: 
+
+### [Static website on S3 bucket](https://github.com/feijaouk/demos123.net/blob/master/docs/s3-static-website.md)
+* AWS Services -  S3
+
+### [VPC-31-AutoScalling](https://github.com/feijaouk/demos123.net/blob/master/docs/vpc-31-autoscalling.md)
+* AWS Services - ELB, ASG, EC2
 
 ---
 
-## [VPC-31-AutoScalling](https://github.com/feijaouk/demos123.net/blob/master/docs/vpc-31-autoscalling.md)
-### AWS Services - ELB, ASG, EC2
+## Other notes
 
+* [some bookmarks](https://github.com/feijaouk/demos123.net/blob/master/docs/some-bookmarks.md)
 
----
-
-## [some bookmarks](https://github.com/feijaouk/demos123.net/blob/master/docs/some-bookmarks.md)
-
----
-
-## footer
-
-* [FeijaoUK](https://feijaouk.com)
+* Copyright [FeijaoUK](https://feijaouk.com), 2017
