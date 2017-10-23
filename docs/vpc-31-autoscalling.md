@@ -3,6 +3,8 @@
 
 ## Link
 
+* trying a new one in Ireland's region - [http://vpc-96-111-classic-ELB-1559255312.eu-west-1.elb.amazonaws.com](http://vpc-96-111-classic-ELB-1559255312.eu-west-1.elb.amazonaws.com)
+
 * [http://vpc-31-autoscalling.demos123.net](http://vpc-31-autoscalling.demos123.net)
 
 * [http://vpc-31-elb-753059963.eu-west-2.elb.amazonaws.com/](http://vpc-31-elb-753059963.eu-west-2.elb.amazonaws.com/)
