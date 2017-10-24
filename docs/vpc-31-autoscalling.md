@@ -3,12 +3,7 @@
 
 ## Link
 
-* trying a new one in Ireland's region - [http://vpc-96-111-classic-ELB-1559255312.eu-west-1.elb.amazonaws.com](http://vpc-96-111-classic-ELB-1559255312.eu-west-1.elb.amazonaws.com)
-
-* [http://vpc-31-autoscalling.demos123.net](http://vpc-31-autoscalling.demos123.net)
-
-* [http://vpc-31-elb-753059963.eu-west-2.elb.amazonaws.com/](http://vpc-31-elb-753059963.eu-west-2.elb.amazonaws.com/)
-  - first link is a CNAME of second link (the ELB)
+* ELB Ireland's region - [http://vpc-96-111-autoscalling.demos123.net/](http://vpc-96-111-autoscalling.demos123.net/)
   - Note, is possible to use more than one ELB, and then routing to the multiple ELBs is done on *Route53*
 
 ## Virtual Private Computer (VPC), Elastic Load Balancer (ELB), Auto-Scalling (ASG)
