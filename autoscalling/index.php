@@ -44,7 +44,7 @@ body {
   background-attachment: fixed;
   background-position: right;
   margin:0;
-  background-size: 120px 60px;
+  background-size: 20% 20%;
 }
 
 .navbar {
