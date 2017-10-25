@@ -39,11 +39,12 @@
 <style>
 
 body {
-	background: url(https://raw.githubusercontent.com/feijaouk/demos123.net/master/autoscalling/images/<?php echo $selectedBg; ?>) no-repeat;
+  background: url(https://raw.githubusercontent.com/feijaouk/demos123.net/master/autoscalling/images/<?php echo $selectedBg; ?>) no-repeat;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
-	margin:0;
+  background-position: right;
+  margin:0;
+  background-size: 120px 60px;
 }
 
 .navbar {
