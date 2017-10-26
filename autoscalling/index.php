@@ -45,11 +45,11 @@ body {
   background-position: right top;
   background-size: 50% 50%;
   height:100%;
-  background-color: DarkSlateGray;	
+  background-color: WhiteSmoke;
 }
 
 h1 {
-    color: white;
+    color: DodgerBlue;
     text-align: center;
 }
 
@@ -85,6 +85,7 @@ p {
 .main {
   padding: 16px;
   margin-top: 30px;
+  margin-left:50px;
   height: 1500px; /* Used in this example to enable scrolling */
 }
 
@@ -103,7 +104,7 @@ p {
   <h1>Demos123.net</h1>
   <h2>Autoscalling demo (v0.1)</h2>
   
-  <center>
+  <left>
   	<br/>
 	<br/>
 	<h1>Instance ID: </h1>		<h2><?php echo $instance_id; ?></h2>
@@ -111,7 +112,7 @@ p {
 	<h1>Public IP Address: </h1>    <h2><?php echo $pubipv4;     ?></h2>
 	<h1>Instance Type: </h1>	<h2><?php echo $type;        ?></h2>				
 	<h1>Zone: </h1>			<h2><?php echo $zone;        ?></h2>	
-  </center>
+  </left>
 
   
 </div>
