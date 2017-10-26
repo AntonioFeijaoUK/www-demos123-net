@@ -50,17 +50,19 @@ body {
 
 h1 {
     color: DodgerBlue;
-    text-align: center;
+    text-align: left;
 }
 
 h2 {
     color: green;
-    text-align: center;
+    text-align: left;
 }
 	
 p {
     font-family: verdana;
     font-size: 20px;
+    text-align: left;
+
 }	
 	
 	
@@ -102,7 +104,7 @@ p {
 
 <div class="main" align="left">
   <h1>Demos123.net</h1>
-  <h2>Autoscalling demo (v0.1)</h2>
+  <h2>Auto Scalling demo and Elastic load balancer demo</h2>
   
   <br/>
   <br/>
@@ -112,7 +114,6 @@ p {
   <h1>Instance Type: </h1>	<h2><?php echo $type;        ?></h2>				
   <h1>Zone: </h1>		<h2><?php echo $zone;        ?></h2>	
 
-  
 </div>
 
 </body>
