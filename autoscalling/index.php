@@ -30,6 +30,8 @@
 	$exec_loads = sys_getloadavg();
 	$exec_cores = trim(shell_exec("grep -P '^processor' /proc/cpuinfo|wc -l"));
 	$cpu = round($exec_loads[1]/($exec_cores + 1)*100, 0) . '%';
+	$dir_space = shell_exec("df -hT");
+
 
   	# Print the data
 ?>
@@ -48,7 +50,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: right top;
-  background-size: 50% 50%;
+  background-size: 40% 40%;
   height:100%;
   background-color: WhiteSmoke;
 }
@@ -113,16 +115,17 @@ p {
   
   <br/>
   <br/>
-  <h1 style="display: inline">Instance ID: </h1>	<h2><?php echo $instance_id; ?></h2>
-  <h1 style="display: inline">Public Hostname: </h1>	<h2><?php echo $pubhostname; ?></h2>
-  <h1 style="display: inline">Public IP Address: </h1>  <h2><?php echo $pubipv4;     ?></h2>
-  <h1 style="display: inline">Instance Type: </h1>	<h2><?php echo $type;        ?></h2>				
-  <h1 style="display: inline">Zone: </h1>		<h2><?php echo $zone;        ?></h2>	
+  <h1 style="display: inline">Instance ID: </h1>	<h2 style="display: inline"><?php echo $instance_id; ?></h2>
+  <h1 style="display: inline">Public Hostname: </h1>	<h2 style="display: inline"><?php echo $pubhostname; ?></h2>
+  <h1 style="display: inline">Public IP Address: </h1>  <h2 style="display: inline"><?php echo $pubipv4;     ?></h2>
+  <h1 style="display: inline">Instance Type: </h1>	<h2 style="display: inline"><?php echo $type;        ?></h2>				
+  <h1 style="display: inline">Zone: </h1>		<h2 style="display: inline"><?php echo $zone;        ?></h2>	
 
   <p>
 	  <?php echo $exec_loads; ?>
 	  <?php echo $exec_cores; ?>
 	  <?php echo $cpu; ?>
+	  <?php echo $dir_space; ?>
   </p>	
 	
 </div>
