@@ -100,19 +100,17 @@ p {
   <a href="https://feijaouk.com" targer="_blank"       >Contact</a>
 </div>
 
-<div class="main">
+<div class="main" align="left">
   <h1>Demos123.net</h1>
   <h2>Autoscalling demo (v0.1)</h2>
   
-  <div align="left">
-  	<br/>
-	<br/>
-	<h1>Instance ID: </h1>		<h2><?php echo $instance_id; ?></h2>
-	<h1>Public Hostname: </h1>	<h2><?php echo $pubhostname; ?></h2>
-	<h1>Public IP Address: </h1>    <h2><?php echo $pubipv4;     ?></h2>
-	<h1>Instance Type: </h1>	<h2><?php echo $type;        ?></h2>				
-	<h1>Zone: </h1>			<h2><?php echo $zone;        ?></h2>	
-  </div>
+  <br/>
+  <br/>
+  <h1>Instance ID: </h1>	<h2><?php echo $instance_id; ?></h2>
+  <h1>Public Hostname: </h1>	<h2><?php echo $pubhostname; ?></h2>
+  <h1>Public IP Address: </h1>  <h2><?php echo $pubipv4;     ?></h2>
+  <h1>Instance Type: </h1>	<h2><?php echo $type;        ?></h2>				
+  <h1>Zone: </h1>		<h2><?php echo $zone;        ?></h2>	
 
   
 </div>
