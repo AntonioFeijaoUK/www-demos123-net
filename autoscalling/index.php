@@ -45,6 +45,7 @@ body {
   background-position: right top;
   background-size: 50% 50%;
   height:100%;
+  background-color: DarkSlateGray;	
 }
 
 h1 {
