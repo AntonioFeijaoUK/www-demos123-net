@@ -27,10 +27,9 @@
   	$zone = file_get_contents($url);
   
 	## DANGER - test zone
-	$exec_loads = sys_getloadavg();
-	$exec_cores = trim(shell_exec("grep -P '^processor' /proc/cpuinfo|wc -l"));
-	$cpu = round($exec_loads[1]/($exec_cores + 1)*100, 0) . '%';
-	$dir_space = shell_exec("df -hT");
+	$dir_space = trim(shell_exec("df -hT"));
+	$dcpu_usage = trim(shell_exec("iostat -xtc 5 1"));
+
 
 
   	# Print the data
@@ -115,11 +114,11 @@ p {
   
   <br/>
   <br/>
-  <h1 style="display: inline">Instance ID: </h1>	<h2 style="display: inline"><?php echo $instance_id; ?></h2>
-  <h1 style="display: inline">Public Hostname: </h1>	<h2 style="display: inline"><?php echo $pubhostname; ?></h2>
-  <h1 style="display: inline">Public IP Address: </h1>  <h2 style="display: inline"><?php echo $pubipv4;     ?></h2>
-  <h1 style="display: inline">Instance Type: </h1>	<h2 style="display: inline"><?php echo $type;        ?></h2>				
-  <h1 style="display: inline">Zone: </h1>		<h2 style="display: inline"><?php echo $zone;        ?></h2>	
+  <h1 style="display: inline">Instance ID: </h1>	<h2 style="display: inline"><?php echo $instance_id; ?></h2><br>
+  <h1 style="display: inline">Public Hostname: </h1>	<h2 style="display: inline"><?php echo $pubhostname; ?></h2><br>
+  <h1 style="display: inline">Public IP Address: </h1>  <h2 style="display: inline"><?php echo $pubipv4;     ?></h2><br>
+  <h1 style="display: inline">Instance Type: </h1>	<h2 style="display: inline"><?php echo $type;        ?></h2><br>			
+  <h1 style="display: inline">Zone: </h1>		<h2 style="display: inline"><?php echo $zone;        ?></h2><br>
 
   <p>
 	  <?php echo $exec_loads; ?>
