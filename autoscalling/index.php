@@ -26,6 +26,11 @@
   	$url = "http://169.254.169.254/latest/meta-data/placement/availability-zone";
   	$zone = file_get_contents($url);
   
+	## DANGER - test zone
+	$exec_loads = sys_getloadavg();
+	$exec_cores = trim(shell_exec("grep -P '^processor' /proc/cpuinfo|wc -l"));
+	$cpu = round($exec_loads[1]/($exec_cores + 1)*100, 0) . '%';
+
   	# Print the data
 ?>
 <!DOCTYPE html>
@@ -108,12 +113,18 @@ p {
   
   <br/>
   <br/>
-  <h1>Instance ID: </h1>	<h2><?php echo $instance_id; ?></h2>
-  <h1>Public Hostname: </h1>	<h2><?php echo $pubhostname; ?></h2>
-  <h1>Public IP Address: </h1>  <h2><?php echo $pubipv4;     ?></h2>
-  <h1>Instance Type: </h1>	<h2><?php echo $type;        ?></h2>				
-  <h1>Zone: </h1>		<h2><?php echo $zone;        ?></h2>	
+  <h1 style="display: inline">Instance ID: </h1>	<h2><?php echo $instance_id; ?></h2>
+  <h1 style="display: inline">Public Hostname: </h1>	<h2><?php echo $pubhostname; ?></h2>
+  <h1 style="display: inline">Public IP Address: </h1>  <h2><?php echo $pubipv4;     ?></h2>
+  <h1 style="display: inline">Instance Type: </h1>	<h2><?php echo $type;        ?></h2>				
+  <h1 style="display: inline">Zone: </h1>		<h2><?php echo $zone;        ?></h2>	
 
+  <p>
+	  <?php echo $exec_loads; ?>
+	  <?php echo $exec_cores; ?>
+	  <?php echo $cpu; ?>
+  </p>	
+	
 </div>
 
 </body>
