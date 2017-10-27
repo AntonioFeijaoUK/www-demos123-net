@@ -19,11 +19,14 @@ yum update -y >> logs-install.logs 2>&1
 yum install -y httpd24 php56 sysstat stress >> logs-install.logs 2>&1
 
 
-# Download Lab files
-wget https://raw.githubusercontent.com/feijaouk/demos123.net/master/autoscalling/index.php -O /var/www/html/index.php
+# Download Lab website files
+cd /var/www/html
+wget https://raw.githubusercontent.com/feijaouk/demos123.net/master/autoscalling/index.php
+wget https://raw.githubusercontent.com/feijaouk/demos123.net/master/autoscalling/stress-on.php
+https://raw.githubusercontent.com/feijaouk/demos123.net/master/autoscalling/stress-on.php
 
 echo -e "This machine was built on $(date)
-script version control 2017-10-20-1709" > /var/www/html/version.txt
+script version control 2017-10-20-1709" > version.txt
 
 # Turn website on on start and start web server now
 chkconfig httpd on >> logs-install.logs 2>&1
