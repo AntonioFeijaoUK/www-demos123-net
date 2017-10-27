@@ -121,8 +121,9 @@ p {
 
 <h3>Danger zone</h3>
 <pre>
-  <?php echo shell_exec("whoami"); 
- 	echo shell_exec("uptime"); 
+  <?php echo shell_exec("whoami");
+ 	echo shell_exec("uptime");
+ 	echo shell_exec("iostat -xtc 5 1");
 	echo shell_exec("ps -eo pcpu,pid,user,args | sort -k 1 -r | head -20");
   ?>
 </pre> 
