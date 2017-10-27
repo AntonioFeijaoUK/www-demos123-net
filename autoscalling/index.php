@@ -28,9 +28,9 @@
   
 	## DANGER - test zone
 	$dir_space = trim(shell_exec("df -hT"));
-	$dcpu_usage = trim(shell_exec("iostat -xtc 5 1"));
-
-
+	$uptime = trim(shell_exec("uptime ; sudo stress --cpu 4 --io 3 --vm 2 --vm-bytes 256M --timeout 20s & /; uptime"));
+	$cpu_usage = trim(shell_exec("iostat -xtc 5 1"));
+	$top10_process = trim(shell_exec("ps -eo pcpu,pid,user,args | sort -k 1 -r | head -10"));
 
   	# Print the data
 ?>
@@ -120,12 +120,13 @@ p {
   <h1 style="display: inline">Instance Type: </h1>	<h2 style="display: inline"><?php echo $type;        ?></h2><br>			
   <h1 style="display: inline">Zone: </h1>		<h2 style="display: inline"><?php echo $zone;        ?></h2><br>
 
-  <p>
-	  <?php echo $exec_loads; ?>
-	  <?php echo $exec_cores; ?>
-	  <?php echo $cpu; ?>
+<h2>Danger zone</h2>
+  <pre>
 	  <?php echo $dir_space; ?>
-  </p>	
+	  <?php echo $uptime; ?>
+	  <?php echo $cpu_usage; ?>
+	  <?php echo $top10_process; ?>
+  </pre>	
 	
 </div>
 
