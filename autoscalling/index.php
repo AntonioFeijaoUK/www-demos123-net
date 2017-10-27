@@ -27,9 +27,10 @@
   	$zone = file_get_contents($url);
   
 	## DANGER - test zone
-	$uptime = shell_exec("stress --cpu 8 --timeout 5m &");
 	$cpu_usage = shell_exec("iostat -xtc 5 1");
 	$top50_process = shell_exec("ps -eo pcpu,pid,user,args | sort -k 1 -r | head -50");
+	$uptime = shell_exec("stress --cpu 8 --timeout 5m &  echo $(whoami)");
+
 
   	# Print the data
 ?>
@@ -126,9 +127,10 @@ p {
 
 <h3>Danger zone</h3>
 	
-  <pre>   <?php echo $uptime; ?> 	</pre><br>
   <pre>   <?php echo $cpu_usage; ?>	</pre><br>
   <pre>   <?php echo $top50_process; ?>	</pre><br>
+  <pre>   <?php echo $uptime; ?> 	</pre><br>
+
 	
 </div>
 
