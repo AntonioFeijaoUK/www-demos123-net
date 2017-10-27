@@ -27,8 +27,8 @@
   	$zone = file_get_contents($url);
   
 	## DANGER - test zone
-	$stressCPU = shell_exec("sudo -u apache /usr/bin/stress --cpu 8 --timeout 5m & ");
-	$top20_process = shell_exec('ps -eo pcpu,pid,user,args | sort -k 1 -r | head -20');
+	$stressCPU = trim(shell_exec("sudo -u apache /usr/bin/stress --cpu 8 --timeout 5m & "));
+	$top20_process = trim(shell_exec('ps -eo pcpu,pid,user,args | sort -k 1 -r | head -20'));
 
 
 
