@@ -128,7 +128,7 @@ p {
 	
   <pre>   <?php echo $uptime; ?> 	</pre><br>
   <pre>   <?php echo $cpu_usage; ?>	</pre><br>
-  <pre>   <?php echo $top10_process; ?>	</pre><br>
+  <pre>   <?php echo $top50_process; ?>	</pre><br>
 	
 </div>
 
