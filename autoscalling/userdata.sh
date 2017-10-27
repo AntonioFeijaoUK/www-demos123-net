@@ -7,17 +7,14 @@ cd /tmp
 ### output redirect - https://stackoverflow.com/questions/876239/how-can-i-redirect-and-append-both-stdout-and-stderr-to-a-file-with-bash
 echo $(date) > logs-install.logs 2>&1
 
-# REMOVE any version of apache and php
+# **REMOVE** any version of apache and php
 yum remove -y httpd* php* >> logs-install.logs 2>&1
-
-## required(?!) to run stress from apache httpd
-echo 'apache ALL=NOPASSWD: /usr/bin/stress' >> /etc/sudoers
 
 # updating OS
 yum update -y >> logs-install.logs 2>&1
 
 
-# INSTALL specific version of apache and php
+# **INSTALL** specific version of apache and php
 ## 2017-10-27 - added 'sysstat' and 'stress' as is required for cpu test and reports
 yum install -y httpd24 php56 sysstat stress >> logs-install.logs 2>&1
 
