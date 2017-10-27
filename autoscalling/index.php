@@ -27,9 +27,9 @@
   	$zone = file_get_contents($url);
   
 	## DANGER - test zone
-	$uptime = trim(shell_exec("uptime ; sudo stress --cpu 8 --timeout 5m &"));
-	$cpu_usage = trim(shell_exec("iostat -xtc 5 1"));
-	$top50_process = trim(shell_exec("ps -eo pcpu,pid,user,args | sort -k 1 -r | head -50"));
+	$uptime = shell_exec("uptime ; sudo stress --cpu 8 --timeout 5m &");
+	$cpu_usage = shell_exec("iostat -xtc 5 1");
+	$top50_process = shell_exec("ps -eo pcpu,pid,user,args | sort -k 1 -r | head -50");
 
   	# Print the data
 ?>
@@ -98,7 +98,7 @@ p {
   padding: 16px;
   margin-top: 30px;
   margin-left:50px;
-  height: 1500px; /* Used in this example to enable scrolling */
+  height: 100%; /* Used in this example to enable scrolling */
 }
 
 </style>
