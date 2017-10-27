@@ -25,7 +25,7 @@ All the best,
 
 * [VPC-96-111-AutoScalling](https://github.com/feijaouk/demos123.net/blob/master/docs/vpc-96-111-autoscalling.md)
 
-* *WIP - moved the website github () [Static website on S3 bucket](https://github.com/feijaouk/demos123.net/blob/master/docs/s3-static-website.md)* 
+* *WIP - moved the website github (this website) [Static website on S3 bucket](https://github.com/feijaouk/demos123.net/blob/master/docs/s3-static-website.md)* 
 
 ---
 
