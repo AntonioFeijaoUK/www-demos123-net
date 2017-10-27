@@ -120,13 +120,13 @@ p {
   <h1 style="display: inline">Zone: </h1>		<h2 style="display: inline"><?php echo $zone;        ?></h2><br>
 
 <h3>Danger zone</h3>
-  <?php
-	echo shell_exec("stress --cpu 1 --timeout 5m & "));
-	echo shell_exec("ps -eo pcpu,pid,user,args | sort -k 1 -r | head -20"));
-	echo shell_exec("whoami"));
+<pre>
+  <?php echo shell_exec("whoami"));
 	echo shell_exec("uptime"));
+	echo shell_exec("ps -eo pcpu,pid,user,args | sort -k 1 -r | head -20"));
+	echo shell_exec("stress --cpu 1 --timeout 5m & "));
   ?>
-
+</pre>
 	
 </div>
 
