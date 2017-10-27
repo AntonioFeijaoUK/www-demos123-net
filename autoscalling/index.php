@@ -27,10 +27,9 @@
   	$zone = file_get_contents($url);
   
 	## DANGER - test zone
-	$dir_space = trim(shell_exec("df -hT"));
-	$uptime = trim(shell_exec("uptime ; sudo stress --cpu 4 --io 3 --vm 2 --vm-bytes 256M --timeout 20s & /; uptime"));
+	$uptime = trim(shell_exec("uptime ; sudo stress --cpu 4 --io 3 --vm 2 --vm-bytes 256M --timeout 60s & /; uptime"));
 	$cpu_usage = trim(shell_exec("iostat -xtc 5 1"));
-	$top10_process = trim(shell_exec("ps -eo pcpu,pid,user,args | sort -k 1 -r | head -10"));
+	$top50_process = trim(shell_exec("ps -eo pcpu,pid,user,args | sort -k 1 -r | head -50"));
 
   	# Print the data
 ?>
@@ -61,6 +60,11 @@ h1 {
 
 h2 {
     color: green;
+    text-align: left;
+}
+	
+h3 {
+    color: red;
     text-align: left;
 }
 	
@@ -120,13 +124,11 @@ p {
   <h1 style="display: inline">Instance Type: </h1>	<h2 style="display: inline"><?php echo $type;        ?></h2><br>			
   <h1 style="display: inline">Zone: </h1>		<h2 style="display: inline"><?php echo $zone;        ?></h2><br>
 
-<h2>Danger zone</h2>
-  <pre>
-	  <?php echo $dir_space; ?>
-	  <?php echo $uptime; ?>
-	  <?php echo $cpu_usage; ?>
-	  <?php echo $top10_process; ?>
-  </pre>	
+<h3>Danger zone</h3>
+	
+  <pre>   <?php echo $uptime; ?> 	</pre><br>
+  <pre>   <?php echo $cpu_usage; ?>	</pre><br>
+  <pre>   <?php echo $top10_process; ?>	</pre><br>
 	
 </div>
 
