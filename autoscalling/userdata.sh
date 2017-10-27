@@ -8,7 +8,8 @@ cd /tmp
 echo $(date) > logs-install.logs 2>&1
 
 # Remove any version of apache and php
-yum remove -y httpd* php* >> logs-install.logs 2>&1
+## 2017-10-27 - added 'sysstat' and 'stress' as is required for cpu test and reports
+yum remove -y httpd* php* sysstat stress >> logs-install.logs 2>&1
 
 # updating OS
 yum update -y >> logs-install.logs 2>&1
