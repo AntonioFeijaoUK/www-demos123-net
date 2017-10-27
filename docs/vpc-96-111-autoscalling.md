@@ -18,6 +18,8 @@
 
 * SNS - Simple Notification Services - sends email when a new machines was added by ASG (cpu-usage-scale-IN and cpu-usage-scale-OUT simples-policies)
 
+* CloudWatch - Added widget into Dashboard with CPU metric of the AutoScalling EC2's CPU utilisation
+
 ---
 
 ## Link
