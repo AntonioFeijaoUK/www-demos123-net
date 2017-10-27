@@ -21,13 +21,16 @@ All the best,
 
 ---
 
-## Demos: 
+## Demos
 
-### [Static website on S3 bucket](https://github.com/feijaouk/demos123.net/blob/master/docs/s3-static-website.md)
-* AWS Services -  S3
+| Demo name and link                                                                              | AWS Services  | Notes |
+|---	                                                                                                        |---	|---	|
+| [Static website on S3 bucket](https://github.com/feijaouk/demos123.net/blob/master/docs/s3-static-website.md)   | S3 | |
+| [VPC-96-111-AutoScalling](https://github.com/feijaouk/demos123.net/blob/master/docs/vpc-96-111-autoscalling.md)   | ELB, ASG, EC2 |   	|
+|   	|   	|   	|
 
-### [VPC-31-AutoScalling](https://github.com/feijaouk/demos123.net/blob/master/docs/vpc-31-autoscalling.md)
-* AWS Services - ELB, ASG, EC2
+
+
 
 ---
 
