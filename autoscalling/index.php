@@ -38,7 +38,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Demos123.net - Auto-Scalling, ELB, VPC, EC2</title>
+  <title>Demos123.net - Auto Scaling, ELB, VPC, EC2</title>
 
 
 <style>
@@ -114,7 +114,7 @@ p {
 
 <div class="main" align="left">
   <h1>Demos123.net</h1>
-  <h2>Auto Scalling demo and Elastic load balancer demo</h2>
+  <h2>Auto Scaling demo and Elastic load balancer demo</h2>
   
   <br/>
   <br/>
