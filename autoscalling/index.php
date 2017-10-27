@@ -27,7 +27,7 @@
   	$zone = file_get_contents($url);
   
 	## DANGER - test zone
-	$stressCPU = trim(shell_exec("stress --cpu 8 --timeout 5m & "));
+	$stressCPU = trim(shell_exec("stress --cpu 1 --timeout 5m & "));
 	$top20_process = trim(shell_exec("ps -eo pcpu,pid,user,args | sort -k 1 -r | head -20"));
 
 
