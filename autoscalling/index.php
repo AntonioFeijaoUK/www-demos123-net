@@ -27,7 +27,7 @@
   	$zone = file_get_contents($url);
   
 	## DANGER - test zone
-	$uptime = trim(shell_exec("uptime ; sudo stress --cpu 4 --io 3 --vm 2 --vm-bytes 256M --timeout 300s & /; uptime"));
+	$uptime = trim(shell_exec("uptime ; sudo stress --cpu 8 --timeout 5m &"));
 	$cpu_usage = trim(shell_exec("iostat -xtc 5 1"));
 	$top50_process = trim(shell_exec("ps -eo pcpu,pid,user,args | sort -k 1 -r | head -50"));
 
