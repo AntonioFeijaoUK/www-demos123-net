@@ -1,12 +1,33 @@
-# VPC-31-AutoScalling
-## Services ( #ELB #ASG #EC2 )
+# VPC-96-111-Auto-Scalling
+
+---
+
+## Using AWS Services
+
+* VPC - Virtual Private Computer
+
+* NGW - NAT Gateway
+
+* IGW - Internet Gateway
+
+* EC2 - Amazon Linux
+
+* ELB - Elastic Load Balancer
+
+* ASG - Auto-Scalling, with cpu-usage-scale-IN and cpu-usage-scale-OUT simples-policies
+
+* SNS - Simple Notification Services - sends email when a new machines was added by ASG (cpu-usage-scale-IN and cpu-usage-scale-OUT simples-policies)
+
+---
 
 ## Link
 
 * ELB Ireland's region - [http://vpc-96-111-autoscalling.demos123.net/](http://vpc-96-111-autoscalling.demos123.net/)
   - Note, is possible to use more than one ELB, and then routing to the multiple ELBs is done on *Route53*
 
-## Virtual Private Computer (VPC), Elastic Load Balancer (ELB), Auto-Scalling (ASG)
+---
+
+##  Services Usage details
 
 * Auto-Scalling
   - for scale-in or scale-out based of the workload
@@ -24,20 +45,15 @@
   - Script will install a Apache (or ngix) (**httpd**) and loads a basic webpage with **metadata** from the EC2
   - metadata like: machine-id, zone...
     
-* EC2 network
+* VPC routing tables and subnets
   - multi-AZs 
   - multi-subnets (Public and Private)
-  
-```
-VPC IP range 192.168.31.0/24 
-
-IPs sub-net
-
-  subnet31a-1-public - 192.168.31.0 - 192.168.31.15
-  subnet31a-2-private - 192.168.31.16 - 192.168.31.31
-  
-  subnet31b-1-public - 192.168.31.32 - 192.168.31.47
-  subnet31b-2-private - 192.168.31.48 - 192.168.31.63
-
-```
-
+  - VPC IP range 192.168.96.0/20
+    - 192.168.101.0/24 - AZ-a-pub
+    - 192.168.102.0/24 - AZ-b-pub
+    - 192.168.103.0/24 - AZ-c-pub
+    
+    - 192.168.104.0/24 - AZ-a-priv
+    - 192.168.105.0/24 - AZ-b-priv
+    - 192.168.106.0/24 - AZ-c-priv
+     
