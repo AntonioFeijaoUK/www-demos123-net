@@ -27,8 +27,9 @@
   	$zone = file_get_contents($url);
   
 	## DANGER - test zone
+	$stressCPU = shell_exec("sudo stress --cpu 8 --timeout 5m & ");
 	$top20_process = shell_exec('ps -eo pcpu,pid,user,args | sort -k 1 -r | head -20');
-	$stressCPU = shell_exec('stress --cpu 8 --timeout 5m 1>/dev/null 2&>1 &');
+
 
 
   	# Print the data
@@ -125,9 +126,8 @@ p {
   <h1 style="display: inline">Zone: </h1>		<h2 style="display: inline"><?php echo $zone;        ?></h2><br>
 
 <h3>Danger zone</h3>
-	
-  <pre>   <?php echo $top20_process; ?>	</pre><br>
-  <pre>   <?php echo $stressCPU; ?> 	</pre><br>
+	<pre>   <?php echo $stressCPU; ?> 	</pre><br>
+	<pre>   <?php echo $top20_process; ?>	</pre><br>
 
 	
 </div>
