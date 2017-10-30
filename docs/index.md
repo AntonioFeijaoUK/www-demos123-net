@@ -23,9 +23,9 @@ All the best,
 
 ## Demos Using AWS Services
 
-* **Demos 1** - [VPC-96-111-Autoscaling](https://feijaouk.github.io/vpc-96-111-autoscaling.demos123.net/)
+* **Demo 1** - [VPC-96-111-Autoscaling](https://feijaouk.github.io/vpc-96-111-autoscaling.demos123.net/)
 
-* **Demos 2** - *WIP - moved the website github (this website) [Static website on S3 bucket](https://github.com/feijaouk/demos123.net/blob/master/docs/s3-static-website.md)* 
+* **Demo 2** - *WIP - moved the website github (this website) [Static website on S3 bucket](https://github.com/feijaouk/demos123.net/blob/master/docs/s3-static-website.md)* 
 
 ---
 
