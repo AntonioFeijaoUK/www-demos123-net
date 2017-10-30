@@ -21,11 +21,11 @@ All the best,
 
 ---
 
-## Demos
+## Demos Using AWS Services
 
-* [VPC-96-111-Autoscaling](https://feijaouk.github.io/vpc-96-111-autoscaling.demos123.net/)
+* **Demos 1** - [VPC-96-111-Autoscaling](https://feijaouk.github.io/vpc-96-111-autoscaling.demos123.net/)
 
-* *WIP - moved the website github (this website) [Static website on S3 bucket](https://github.com/feijaouk/demos123.net/blob/master/docs/s3-static-website.md)* 
+* **Demos 2** - *WIP - moved the website github (this website) [Static website on S3 bucket](https://github.com/feijaouk/demos123.net/blob/master/docs/s3-static-website.md)* 
 
 ---
 
