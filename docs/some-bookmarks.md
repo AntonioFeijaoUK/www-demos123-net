@@ -42,3 +42,19 @@ vim /etc/httpd/conf/httpd.conf
    TraceEnable Off
     
 ```
+
+
+### hardenight httpd
+
+```shell
+
+httpd -V
+
+Options -Indexes
+
+ServerTokens Prod
+
+ServerSignature Off
+
+
+```
