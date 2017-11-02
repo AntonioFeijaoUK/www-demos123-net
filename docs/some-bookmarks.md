@@ -18,7 +18,7 @@
 * [https://www.wonderhowto.com/](https://www.wonderhowto.com/)
 
 
-### commands
+## Some usefull Linux commands and best practices
 
 * https://stackoverflow.com/questions/4922943/test-from-shell-script-if-remote-tcp-port-is-open
 
@@ -89,3 +89,37 @@ SSLProtocol -ALL +TLSv1 +TLSv1.1 +TLSv1.2
 SSLProtocol all -SSLv2 -SSLv3
 
 ```
+
+
+### Working with files Linux Command Linux
+
+* [Youtube - Practical Linux Commands For Real Life](https://www.youtube.com/watch?v=08Tg1aTouMA)
+
+```shell
+
+ls -al !(*.txt|*.java)
+
+# also works with rm ....
+
+
+find / -xdev -type f -size +100M -exec du -sh {} ';' | sort -r | head -n 10
+
+
+pkill -f httpd
+
+
+yum history all
+
+yum history info 4
+
+yum history undo 4
+
+
+
+
+
+
+
+
+
+
