@@ -126,7 +126,15 @@ yum install mlocate
 updatedb
 locate
 
+localte httpd | xargs ls -la
 
+crontab -e
+
+ls -ls /var/spool/cron
+
+
+crontab -eu root
+crontab -eu ec2-user
 
 ```
 
