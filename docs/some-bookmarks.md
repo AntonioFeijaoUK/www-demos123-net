@@ -30,3 +30,15 @@
   echo $?
 
 ```
+
+### curl
+
+```shell
+curl -k -X TRACE https://ipinfo.io/
+
+# if is allowed, please disabled it
+
+vim /etc/httpd/conf/httpd.conf
+   TraceEnable Off
+    
+```
