@@ -115,11 +115,19 @@ yum history info 4
 yum history undo 4
 
 
+makewhatis
+apropos file | grep zip
+
+
+yum locate */localte
+
+yum install mlocate
+
+updatedb
+locate
 
 
 
-
-
-
+```
 
 
