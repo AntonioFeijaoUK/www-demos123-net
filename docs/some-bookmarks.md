@@ -56,5 +56,36 @@ ServerTokens Prod
 
 ServerSignature Off
 
+```
+
+### using SSLScan
+* [https://www.youtube.com/watch?v=VgaF5Ev2VW0](https://www.youtube.com/watch?v=VgaF5Ev2VW0)
+* https://github.com/rbsec/sslscan
+
+```shell
+
+yum install sslscan
+
+yum install git gcc openssl-devel
+
+sslscan www.YOURSITE.com:443
+
+sslscan https://www.YOURSITE.com:443
+
+
+## check what others are using
+
+sslscan https://www.google.com
+
+
+## change httpd.config 
+
+vim  /etc/httpd/conf.d/ssl.conf
+
+SSLProtocol -ALL +TLSv1 +TLSv1.1 +TLSv1.2
+
+# or
+
+SSLProtocol all -SSLv2 -SSLv3
 
 ```
