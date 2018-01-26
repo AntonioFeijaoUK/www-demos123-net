@@ -121,3 +121,5 @@
 *	Elastic Load Balancing	;	High Scale Load Balancing
 *	TensorFlow on AWS	;	Open-source Machine Intelligence Library
 *	VMware Cloud on AWS	;	Build a Hybrid Cloud without Custom Hardware
+
+## Updated on 2018-01-21
