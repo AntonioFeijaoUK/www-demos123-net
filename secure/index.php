@@ -38,7 +38,7 @@
       </div>
       <div class="navbar navbar-dark bg-dark box-shadow">
         <div class="container d-flex justify-content-between">
-          <a href="https://aws.amazon.com/certificate-manager/" targer="_blank" class="navbar-brand d-flex align-items-center"><strong>Demo on AWS Certificate Manager</strong></a>
+          <a href="https://aws.amazon.com/certificate-manager/" target="_blank" class="navbar-brand d-flex align-items-center"><strong>Demo on AWS Certificate Manager</strong></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
