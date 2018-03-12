@@ -25,7 +25,7 @@ yum -y install httpd jq php
 
 ## Download index.html file
 cd /var/www/html
-wget https://raw.githubusercontent.com/feijaouk/demos123.net/master/secure/index.html
+wget https://raw.githubusercontent.com/feijaouk/demos123.net/master/secure/index.php
 
 
 ## Turn website on on start and start web server now
