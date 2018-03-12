@@ -1,0 +1,6 @@
+#!/bin/bash
+cd /tmp
+yum -y install wget
+wget https://raw.githubusercontent.com/feijaouk/demos123.net/master/secure/secure-webpage-install.sh
+chmod +x secure-webpage-install.sh
+./secure-webpage-install.sh
