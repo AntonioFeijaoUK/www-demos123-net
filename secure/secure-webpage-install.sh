@@ -19,17 +19,20 @@ yum remove -y httpd* php*
 
 
 ## **INSTALL** specific version of apache and php
-yum install -y httpd 
+yum install -y httpd jq
 
 
-# Download Lab website files
+## Download index.html file
 cd /var/www/html
-wget https://raw.githubusercontent.com/feijaouk/demos123.net/master/autoscalling/index.php
-wget https://raw.githubusercontent.com/feijaouk/demos123.net/master/autoscalling/stress-on.php
-wget https://raw.githubusercontent.com/feijaouk/demos123.net/master/autoscalling/stress-off.php
+wget https://raw.githubusercontent.com/feijaouk/demos123.net/master/secure/index.html
 
-echo -e "This machine was built on $(date) /n script version control 2017-10-20-1709" > version.txt
+## Getting EC2 metadata
+EC2_DOCUMENT=`curl --silent http://169.254.169.254/latest/dynamic/instance-identity/document`
 
-# Turn website on on start and start web server now
-chkconfig httpd on >> logs-install.logs 2>&1
-service httpd start >> logs-install.logs 2>&1
+echo -e "This machine was built on $(date) /n
+script version control 2017-10-20-1709 /n
+${EC2_DOCUMENT} " > version.html
+
+## Turn website on on start and start web server now
+systemctl enable httpd.service 
+systemctl start httpd.service 
